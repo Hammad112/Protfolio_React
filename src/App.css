@@ -221,13 +221,13 @@ input{
     padding: 5px;
     margin: 10px;
     width: 40%;
-    height: 20px;
+    height: 25px;
     border-radius: 8px;
 }
 .TextAreas{
   padding: 5px;
   margin: 5px;
-  width: 50%;
+  width: 40%;
   height: auto;
   border-radius: 8px;
 }
