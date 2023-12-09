@@ -378,7 +378,6 @@ input{
     padding: 0px 0px;
     margin: 0px 0px;
     font-size: 0.7em;
-    font-weight: bold;
     color: #000000;
   }
   
@@ -390,7 +389,7 @@ input{
     padding: 5px;
     margin: 3px;
     width: 50%;
-    height: 15px;
+    height: 20px;
     border-radius: 8px;
 }
 .TextAreas{
