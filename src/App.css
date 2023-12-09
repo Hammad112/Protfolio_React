@@ -89,7 +89,7 @@ header{
     height: 300px;
     width: 300px;
     overflow:hidden;
-    margin: 10px 0px;
+    margin: 15px 0px;
     box-shadow: 1px 1px 1px 1px rgb(46, 45, 45);
     border-radius: 6px;
     background-color: #fff;
@@ -124,12 +124,15 @@ header{
     color: #000000;
     margin: 0px 0px 0px 0px;      
 }
+.Formmain label{
+  font-size: 1.4rem;
+}
 input{
     border: none;
     outline: none;
     padding: 5px;
     margin: 5px;
-    width: 30%;
+    width: 25%;
     height: 25px;
     border-radius: 8px;
 }
@@ -138,7 +141,7 @@ input{
     outline: none;
     padding: 5px;
     margin: 5px;
-    width: 30%;
+    width: 25%;
     height: 45px;
     border-radius: 8px
 }
