@@ -1,38 +1,472 @@
-.App {
-  text-align: center;
+body{
+  margin: 0px 0px;
+  padding: 0px 0px;
+  height: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Main{
+  height: 100%;
+  width: 100%;
+ }
+/*~ Header.css */
+header{
+  margin: 0px  0px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding:  0.9rem 10px; 
+  background-color: #333;
+  color: #fff;
+ }
+ .nav-items{
+    display: flex;
+    align-items: center;
+    margin: 0px 0px;
+    padding: 0px 0px;
+    gap:20px;
+ }
+ .nav-items-menue{
+      color:white;
+      cursor: pointer;
+ }
+ .link{
+      color:white;
+      font-size: 1.35rem;
+      margin: 0 5px; 
+      cursor: pointer;
+ }
+ .link:hover ,.nav-items-menue:hover{
+      color: rgb(94, 40, 243);
+      text-decoration: none; 
+      cursor: pointer;
+ }
+  /* *Landing Section */
+  .land-container{
+    background-color: darkblue;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    padding: 20px 0px;
+    margin: 0px 0px;
+  }
+  .imagesrc {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin:0px 0px
+    }
+    .text-land {
+      color: #fff;
+      font-size: 1.3em;
+      text-align: center;
+      padding: 20px  0px;
+      margin:0px 0px;
+     }
+     .para-land{
+     color: #fff;
+     font-size: 2.3em;
+     text-align: center;
+     padding:  0px  0px;
+     margin: 20px 0px;
+  }
+  /* *Card */
+  .Container-project{
+    background-color: rgb(43, 82, 5);
+  }
+  .Card-Container{
+    display: flex;
+    justify-content: space-around;
+  }
+  .Card-Container h3{
+    color: black;
+    font-size: 1.6rem;
+    margin: 10px 0px 0px 10px;
+  }
+  .card-1{
+    height: 300px;
+    width: 300px;
+    overflow:hidden;
+    margin: 10px 0px;
+    box-shadow: 1px 1px 1px 1px rgb(46, 45, 45);
+    border-radius: 6px;
+    background-color: #fff;
+   }
+   img{
+    height: 65%;
+    width: 100%;
+    border-radius: 5px;
+    margin: 0px 0px;
+    padding: 0px 0px;
+   }
+   .card-1 span{
+    font-size: 1.4em;
+    font-weight: bold;
+    padding: 0px 5px;
+    margin: 0px 0px;
+   }
+   .card-1 p{
+   font-size: 0.7em;
+   padding: 0px 5px;
+   margin: 3px 0px;
+   }
+  /*^ Forms */
+
+  .Formmain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: purple;
+    color: #000000;
+    margin: 0px 0px 0px 0px;      
+}
+input{
+    border: none;
+    outline: none;
+    padding: 5px;
+    margin: 5px;
+    width: 30%;
+    height: 25px;
+    border-radius: 8px;
+}
+.TextAreas{
+    border: none;
+    outline: none;
+    padding: 5px;
+    margin: 5px;
+    width: 30%;
+    height: 45px;
+    border-radius: 8px
+}
+.FormButton {
+    background-color: green;
+    color: white;
+    padding: 5px;
+    margin: 5px;
+    width: 10%;
+    height: 45px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+   /* * Footer */
+   .Footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    height: auto; 
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+  }
+  .footercontent {
+    margin: 0px;
+    padding: 20px;
+  }
+
+
+@media screen and (max-width: 768px) {
+  .land-container{
+    background-color: darkblue;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    padding: 10px 0px;
+    margin: 0px 0px;
+  }
+
+  .imagesrc {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%; 
+    }
+
+    .text-land {
+      color: #fff;
+      font-size: 1.3em;
+      text-align: center;
+      padding: 5px 0px;
+     }
+     .para-land{
+     color: #fff;
+     font-size: 1.5em;
+     text-align: center;
+     padding: 5px 0px;
+  }
+  /**Form  */
+  .Formmain {
+    height: auto;
+    background-color: purple;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 0px  0px;      
+}
+  .formhead{
+    font-size: 1.2em;
+  }
+  input{
+    border: none;
+    outline: none;
+    padding: 5px;
+    margin: 10px;
+    width: 50%;
+    height: 20px;
+    border-radius: 8px;
+}
+.TextAreas{
+  padding: 5px;
+  margin: 5px;
+  width: 50%;
+  height: auto;
+  border-radius: 8px;
+}
+.FormButton {
+  background-color: green;
   color: white;
+  padding: 5px;
+  margin: 5px;
+  width: 30%;
+  height: 35px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+/** Card */
+.Card-Container{
+  display: flex;
+    justify-content: space-around;
+}
+.Card-Container h3{
+  color: black;
+  font-size: 1.2rem;
+  margin: 10px 0px 0px 10px;
+}
+.card-1{
+  height: 250px;
+  width: 250px;
+  overflow:hidden;
+  margin: 10px 10px;
+  box-shadow: 1px 1px 1px 1px rgb(46, 45, 45);
+  border-radius: 6px;
+  background-color: #fff;
+ }
+ img{
+  height: 65%;
+  width: 100%;
+  border-radius: 5px;
+  margin: 0px 0px;
+  padding: 0px 0px;
+ }
+ .card-1 span{
+  font-size: 1em;
+  font-weight: bold;
+  padding: 0px 5px;
+  margin: 0px 0px;
+ }
+ .card-1 p{
+ font-size: 0.5em;
+ padding: 0px 5px;
+ margin: 3px 0px;
+ }
+ /* *Footer */
+ .Footer {
+  width: 100%;
+  background-color: black;
+  color: white;
+  height: auto; 
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  font-size: smaller;
+}
+.footercontent {
+  margin: 0px;
+  padding: 10px;
 }
 
-.App-link {
-  color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 468px) {
+  /* *HEADER */
+  header{
+    display: flex;
+    justify-content: space-between;
+    padding:  0.6rem 5px; 
+  
+   }
+   .nav-items{
+      display: flex;
+      align-items: center;
+      gap:5px;
+   }
+  .nav-items-menue{
+    font-size: 0.6rem;
+    margin-right: 5px;
+    color:white;
+    cursor: pointer;
+}
+.link{
+
+    color:white;
+    font-size: 0.8rem;
+    margin: 0 4px; 
+    cursor: pointer;
+}
+/* * Landing Section */
+  .land-container{
+    background-color: darkblue;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    padding: 20px 0px;
+    margin: 0px 0px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .imagesrc {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+   
+    }
+
+    .text-land {
+      color: #fff;
+      font-size: 0.6em;
+      text-align: center;
+      padding: 5px  0px;
+      margin:5px 0px;
+     }
+     .para-land{
+     color: #fff;
+     font-size: 0.8em;
+     text-align: center;
+     padding:  0px  0px;
+     margin: 5px 0px;
+  }
+  .Formmain {
+    height: auto;
+    background-color: purple;
+    color: #fff9f9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 0px  0px;      
+}
+
+  .formhead{
+    font-size: 1.0em;
+    
+  }
+  .Formmain  label{
+    padding: 0px 0px;
+    margin: 0px 0px;
+    font-size: 0.7em;
+    font-weight: bold;
+    color: #000000;
+  }
+  
+  input{
+    color: #000000;
+    font-size: 0.6em;
+    border: none;
+    outline: none;
+    padding: 5px;
+    margin: 3px;
+    width: 50%;
+    height: 15px;
+    border-radius: 8px;
+}
+.TextAreas{
+  padding: 5px;
+  margin: 5px;
+  width: 50%;
+  height: 30px;
+  border-radius: 8px;
+  font-size: 0.6em;
+}
+.FormButton {
+  font-size: 0.6em;
+  background-color: green;
+  color: white;
+  padding: 5px;
+  margin: 5px;
+  width: 30%;
+  height: 25px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+  /* ^Cards */
+  .Card-Container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .Card-Container h3{
+    
+      color: black;
+      font-size: 1.0rem;
+      margin: 10px 0px;
+    
+  }
+ 
+  .card-1{
+    height: 200px;
+    width: 200px;
+    overflow:hidden;
+    margin: 10px 10px;
+    box-shadow: 1px 1px 1px 1px rgb(46, 45, 45);
+    border-radius: 6px;
+    background-color: #fff;
+   }
+   img{
+    height: 65%;
+    width: 100%;
+    border-radius: 5px;
+    margin: 0px 0px;
+    padding: 0px 0px;
+   }
+   .card-1 span{
+    font-size: 0.7em;
+    font-weight: bold;
+    padding: 0px 5px;
+    margin: 0px 0px;
+   }
+   .card-1 p{
+   font-size: 0.3em;
+   padding: 0px 5px;
+   margin: 3px 0px;
+   }
+   /* *Footer */
+   .Footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    height: auto; 
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    font-size:xx-small;
+  }
+  .footercontent {
+    margin: 0px;
+    padding: 10px;
   }
 }
+
+
+
+
+
