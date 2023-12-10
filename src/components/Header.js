@@ -6,10 +6,13 @@ import { faFacebook, faGithub, faInstagram, faLinkedin, faStackOverflow } from '
 const Header = () => {
     const scrollToSection = (sectionId) => {
         const section = document.getElementById(sectionId);
-      
+        const sectionForm=document.getElementById(sectionId);
         if (section) {
           section.scrollIntoView({ behavior: 'smooth' });
-        }
+      }
+      else if (sectionForm) {
+        sectionForm.scrollIntoView({ behavior: 'smooth' });
+                }
       };
     return (
         <header className="Head">

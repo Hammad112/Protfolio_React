@@ -2,11 +2,13 @@ body{
   margin: 0px 0px;
   padding: 0px 0px;
   height: auto;
+  
 }
 
 .Main{
   height: 100%;
   width: 100%;
+  
  }
 /*~ Header.css */
 header{
